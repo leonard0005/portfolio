@@ -1,0 +1,39 @@
+:root {
+  --primary-color: rgb(58, 95, 129);
+  --secondary-color: rgb(146, 170, 178);
+  --terciary-color: rgb(237, 233, 226);
+  --fourtuary-color: rgb(26, 42, 47);
+  --text-color: black;
+  --background-color: rgb(248, 249, 250);
+  --font-family: 'Roboto', sans-serif;
+
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  padding-top: 110px;
+  min-height: 100vh;
+  background-color: rgb(248, 249, 250);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.content-div {
+  flex: 1;
+}
