@@ -1,0 +1,95 @@
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.resume-title {
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.download-btn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.resume-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pdf-embed {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-embed embed {
+  border: none;
+}
+
+.pdf-fallback {
+  display: none;
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.pdf-fallback p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.pdf-fallback a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pdf-fallback a:hover {
+  text-decoration: underline;
+}
+
+/* Hide embed on very small screens and show fallback */
+@media (max-width: 450px) {
+  /* Show fallback on small screens 
+  .pdf-embed {
+    display: none;
+  }
+  
+  .pdf-fallback {
+    display: block;
+  }
+  */
+  
+  .resume-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

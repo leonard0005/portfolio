@@ -26,11 +26,30 @@
     </div>
 
     <nav>
-      <button class="about-me-button" onclick="goToPage(index.html)">About Me</button>
-      <button class="resume-button" onclick="goToPage(cv.html)">Resume</button>
-      <button class="work-button" onclick="goToPage(work.html)">Work</button>
-      <button class="projects-button" onclick="goToPage(projects.html)">Projects</button>
-      <button class="academics-button" onclick="goToPage(academics.html)">Academics</button>
+      <!-- Mobile hamburger button (hidden on desktop) -->
+      <button class="hamburger-btn" onclick="toggleMobileMenu()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <!-- Desktop navigation (hidden on mobile) -->
+      <div class="desktop-nav">
+        <button class="about-me-button" onclick="goToPage('index.html')">About Me</button>
+        <button class="resume-button" onclick="goToPage('cv.html')">Resume</button>
+        <button class="work-button" onclick="goToPage('work.html')">Work</button>
+        <button class="projects-button" onclick="goToPage('projects.html')">Projects</button>
+        <button class="academics-button" onclick="goToPage('academics.html')">Academics</button>
+      </div>
+      
+      <!-- Mobile dropdown menu (hidden by default) -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-nav-btn" onclick="goToPage('index.html')">About Me</button>
+        <button class="mobile-nav-btn" onclick="goToPage('cv.html')">Resume</button>
+        <button class="mobile-nav-btn" onclick="goToPage('work.html')">Work</button>
+        <button class="mobile-nav-btn" onclick="goToPage('projects.html')">Projects</button>
+        <button class="mobile-nav-btn" onclick="goToPage('academics.html')">Academics</button>
+      </div>
     </nav>
 
 
