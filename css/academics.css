@@ -1,0 +1,183 @@
+.academics-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.academics-title {
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.university-section {
+  margin-bottom: 50px;
+}
+
+.university-name {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.degree-info {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Table Styles - Similar to Word Tables */
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grades-table thead {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.grades-table th {
+  padding: 15px 12px;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Center align the Grade header specifically */
+.grades-table th:last-child {
+  text-align: center;
+}
+
+.grades-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.grades-table tbody tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.grades-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Grade cell styling */
+.grades-table td:last-child {
+  font-weight: 500;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.gpa-section {
+  text-align: right;
+  margin-top: 15px;
+  padding: 10px 0;
+  border-top: 2px solid var(--primary-color);
+}
+
+.gpa-text {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .academics-section {
+    padding: 0 15px;
+  }
+  
+  .academics-title {
+    font-size: 26px;
+  }
+  
+  .university-name {
+    font-size: 20px;
+  }
+  
+  .grades-table {
+    font-size: 12px;
+  }
+  
+  .grades-table th,
+  .grades-table td {
+    padding: 8px 6px;
+  }
+  
+  .grades-table th {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Stack table on very small screens */
+  .grades-table {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .grades-table,
+  .grades-table thead,
+  .grades-table tbody,
+  .grades-table th,
+  .grades-table td,
+  .grades-table tr {
+    display: block;
+  }
+  
+  .grades-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .grades-table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grades-table td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  
+  .grades-table td:before {
+    content: attr(data-label) ": ";
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+}

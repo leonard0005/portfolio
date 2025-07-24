@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leonardo Nieto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/academics.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="name-div"> 
+      <p class="name-text">LEONARDO NIETO</p>
+    </div>
+
+    <nav>
+      <!-- Mobile hamburger button (hidden on desktop) -->
+      <button class="hamburger-btn" onclick="toggleMobileMenu()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <!-- Desktop navigation (hidden on mobile) -->
+      <div class="desktop-nav">
+        <button class="about-me-button" onclick="goToPage('index.html')">About Me</button>
+        <button class="resume-button" onclick="goToPage('cv.html')">Resume</button>
+        <button class="work-button" onclick="goToPage('work.html')">Work</button>
+        <button class="projects-button" onclick="goToPage('projects.html')">Projects</button>
+        <button class="academics-button" onclick="goToPage('academics.html')">Academics</button>
+      </div>
+      
+      <!-- Mobile dropdown menu (hidden by default) -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-nav-btn" onclick="goToPage('index.html')">About Me</button>
+        <button class="mobile-nav-btn" onclick="goToPage('cv.html')">Resume</button>
+        <button class="mobile-nav-btn" onclick="goToPage('work.html')">Work</button>
+        <button class="mobile-nav-btn" onclick="goToPage('projects.html')">Projects</button>
+        <button class="mobile-nav-btn" onclick="goToPage('academics.html')">Academics</button>
+      </div>
+    </nav>
+
+
+  </div>
+
+<div class="content-div">
+  
+  <div class="academics-section">
+    <h1 class="academics-title">Academic Records</h1>
+    
+    <!-- University Section -->
+    <div class="university-section">
+      <h2 class="university-name">The University of British Columbia</h2>
+      <p class="degree-info">Bachelor of Applied Science in Engineering Physics</p>
+      
+      <table class="grades-table">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Course Code">APSC_V 100</td>
+            <td data-label="Course Name">Introduction to Engineering I</td>
+            <td data-label="Grade">86%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">APSC_V 101</td>
+            <td data-label="Course Name">Introduction to Engineering II</td>
+            <td data-label="Grade">89%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">APSC_V 160</td>
+            <td data-label="Course Name">Introduction to Computation in Engineering Design</td>
+            <td data-label="Grade">99%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">CHEM_V 154</td>
+            <td data-label="Course Name">Chemistry for Engineering</td>
+            <td data-label="Grade">91%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">WRDS_V 150</td>
+            <td data-label="Course Name">Writing and Research in the Disciplines</td>
+            <td data-label="Grade">100%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">MATH_V 100</td>
+            <td data-label="Course Name">Differential Calculus with Applications (Transfer Credit)</td>
+            <td data-label="Grade">TR</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">MATH_V 101</td>
+            <td data-label="Course Name">Integral Calculus with Applications</td>
+            <td data-label="Grade">95%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">MATH_V 152</td>
+            <td data-label="Course Name">Linear Systems</td>
+            <td data-label="Grade">98%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">PHYS_V 157</td>
+            <td data-label="Course Name">Introductory Physics for Engineers I</td>
+            <td data-label="Grade">91%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">PHYS_V 158</td>
+            <td data-label="Course Name">Introductory Physics for Engineers II</td>
+            <td data-label="Grade">97%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">PHYS_V 159</td>
+            <td data-label="Course Name">Introductory Physics Laboratory for Engineers</td>
+            <td data-label="Grade">90%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">PHYS_V 170</td>
+            <td data-label="Course Name">Mechanics I</td>
+            <td data-label="Grade">98%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">FREN_V 101</td>
+            <td data-label="Course Name">Beginners' French I</td>
+            <td data-label="Grade">91%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">MATH_V 253</td>
+            <td data-label="Course Name">Multivariable Calculus</td>
+            <td data-label="Grade">94%</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">CIVL_V 250</td>
+            <td data-label="Course Name">Engineering and Sustainable Development</td>
+            <td data-label="Grade">In Progress</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">CPEN_V 221</td>
+            <td data-label="Course Name">Software Construction I</td>
+            <td data-label="Grade">In Progress</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">ELEC_V 204</td>
+            <td data-label="Course Name">Linear Circuits</td>
+            <td data-label="Grade">In Progress</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">ENPH_V 259</td>
+            <td data-label="Course Name">Experimental Techniques</td>
+            <td data-label="Grade">In Progress</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">MATH_V 317</td>
+            <td data-label="Course Name">Calculus IV</td>
+            <td data-label="Grade">In Progress</td>
+          </tr>
+          <tr>
+            <td data-label="Course Code">MATH_V 255</td>
+            <td data-label="Course Name">Ordinary Differential Equations</td>
+            <td data-label="Grade">In Progress</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="gpa-section">
+        <p class="gpa-text"><strong>Cumulative GPA: 4.33/4.33</strong></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  <div class="footer-div">
+
+    <div class="footer-socials-div">
+      <a href="mailto:leo.nieto.b@gmail.com">Email: leo.nieto.b@gmail.com</a>
+      <a href="https://www.linkedin.com/in/leonardo-nieto-becerril/" target="_blank">
+        <img class="social-icon" src="images/linkedin-icon-white.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/leonard0005" target="_blank">
+        <img class="social-icon" src="images/github-icon-white.png" alt="GitHub">
+      </a>
+    </div>
+
+    <div class="footer-socials-mobile-div">
+      <div class="mail-mobile-div">
+        <a href="mailto:leo.nieto.b@gmail.com">Email: leo.nieto.b@gmail.com</a>
+      </div>
+      <div class="footer-socials-mobile-icons-div">
+        <a href="https://www.linkedin.com/in/leonardo-nieto-becerril/" target="_blank">
+          <img class="social-icon" src="images/linkedin-icon-white.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/leonard0005" target="_blank">
+          <img class="social-icon" src="images/github-icon-white.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+      
+
+    <div class= "footer-nav-div">
+        <a href="index.html">About</a>
+        <a href="cv.html">Resume</a>
+        <a href="work.html">Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+    </div>
+
+
+    <div class="footer-socials-and-nav-tablet-div">
+      <div class="footer-socials-tablet-div">
+        <div class="mail-tablet-div">
+          <a href="mailto:leo.nieto.b@gmail.com">Email: leo.nieto.b@gmail.com</a>
+        </div>
+
+        <div class="footer-socials-tablet-icons-div">
+          <a href="https://www.linkedin.com/in/leonardo-nieto-becerril/" target="_blank">
+            <img class="social-icon" src="images/linkedin-icon-white.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/leonard0005" target="_blank">
+            <img class="social-icon" src="images/github-icon-white.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+
+      <div class="footer-nav-tablet-div">
+        <a href="index.html">About</a>
+        <a href="cv.html">Resume</a>
+        <a href="work.html">Work</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+      </div>
+
+    </div>
+
+    <div class="footer-text-div">
+        <p class="footer-text">
+          © 2025 Leonardo Nieto. All rights reserved.
+        </p>
+    </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+
+
+
+</html>
