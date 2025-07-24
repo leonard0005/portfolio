@@ -73,7 +73,7 @@
 
       </div>  
 
-      <div class="photo-slider">
+      <div class="photo-slider" id="work1-slider">
         <div class="slider-container">
           <div class="slide active">
             <img src="images/work/1-1.jpg" alt="SMPC Technologies - Image 1">
@@ -87,14 +87,14 @@
         </div>
         
         <!-- Navigation arrows -->
-        <button class="slider-btn prev-btn" onclick="changeSlide(-1)">‹</button>
-        <button class="slider-btn next-btn" onclick="changeSlide(1)">›</button>
-        
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'work1-slider')">‹</button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1, 'work1-slider')">›</button>
+
         <!-- Dots indicator -->
         <div class="slider-dots">
-          <span class="dot active" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot active" onclick="currentSlide(1, 'work1-slider')"></span>
+          <span class="dot" onclick="currentSlide(2, 'work1-slider')"></span>
+          <span class="dot" onclick="currentSlide(3, 'work1-slider')"></span>
         </div>
       </div>
 
@@ -114,9 +114,29 @@
 
       </div>  
 
-      <!-- grid?? -->
-      <div class="personal-image-div">
-        <img class="personal-image" src="images/personal-image.jpg" alt="Personal Image">
+      <div class="photo-slider" id="work2-slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="images/work/2-1.jpg" alt="SWARM Robotics - Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/work/2-2.jpg" alt="SWARM Robotics - Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/work/2-3.jpg" alt="SWARM Robotics - Image 3">
+          </div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'work2-slider')">‹</button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1, 'work2-slider')">›</button>
+
+        <!-- Dots indicator -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1, 'work2-slider')"></span>
+          <span class="dot" onclick="currentSlide(2, 'work2-slider')"></span>
+          <span class="dot" onclick="currentSlide(3, 'work2-slider')"></span>
+        </div>
       </div>
 
     </div>
