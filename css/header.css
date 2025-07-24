@@ -36,7 +36,9 @@ nav {
   padding-right: 20px;
 }
 
-button {
+.header > nav > .desktop-nav button,
+.header button:not(.mobile-nav-btn):not(.hamburger-btn),
+nav button:not(.mobile-nav-btn):not(.hamburger-btn) {
   background-color: transparent;
   color: var(--background-color);
   border: 1.5px solid var(--background-color);
@@ -51,7 +53,9 @@ button {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-button:hover {
+.header > nav > .desktop-nav button:hover,
+.header button:not(.mobile-nav-btn):not(.hamburger-btn):hover,
+nav button:not(.mobile-nav-btn):not(.hamburger-btn):hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
