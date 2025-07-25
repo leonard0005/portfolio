@@ -22,7 +22,7 @@
 }
 
 .text-div {
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,5 +61,22 @@
   width: auto;
   height: auto;
   border-radius: 10px;
+}
+
+/* Mobile responsive - stack text and slider vertically on smaller screens */
+@media (max-width: 650px) {
+  .work-instance-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-div {
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 

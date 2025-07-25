@@ -1,8 +1,7 @@
 .footer-div {
   background-color: var(--fourtuary-color);
   margin-top: 150px;
-  padding: 20px;
-  padding-top: 30px;
+  padding: 30px 20px;
   flex-direction: row;
   color: var(--background-color);
   display: flex;
