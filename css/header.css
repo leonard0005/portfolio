@@ -142,7 +142,7 @@ nav button:not(.mobile-nav-btn):not(.hamburger-btn):hover {
   border-radius: 0 0 8px 8px;
 }
 
-@media (min-width: 700px) and (max-width: 1110px) {
+@media (min-width: 800px) and (max-width: 1110px) {
   .header {
     flex-direction: column;
     align-items: center;
@@ -171,7 +171,7 @@ nav button:not(.mobile-nav-btn):not(.hamburger-btn):hover {
   }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 799px) {
   .header {
     flex-direction: row;
     justify-content: space-between;

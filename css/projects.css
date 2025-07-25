@@ -3,17 +3,17 @@
   flex-direction: column;
 }
 
-.work-experience-page-title {
+.projects-page-title {
   font-family: var(--font-family);
   font-size: 30px;
   font-weight: 400;
   color: var(--text-color);
-  margin: 0; /*margin comes from itterable work-isntance-div*/
+  margin: 0; /*margin comes from itterable experience-isntance-div*/
   text-align: center;
 }
 
 
-.work-instance-div {
+.project-instance-div {
   display : flex;
   flex-direction: row;
   justify-content: space-around;
@@ -30,12 +30,12 @@
   padding-left: 40px;
 }
 
-.work-instance-title {
+.project-instance-title {
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.work-instance-description {
+.project-instance-description {
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 400;
@@ -47,25 +47,9 @@
 
 
 
-.personal-image-div {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 40px;
-}
-
-.personal-image {
-  max-width: 100%;
-  max-height: 400px;
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-}
-
 /* Mobile responsive - stack text and slider vertically on smaller screens */
 @media (max-width: 650px) {
-  .work-instance-div {
+  .project-instance-div {
     flex-direction: column;
     align-items: center;
   }

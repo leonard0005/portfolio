@@ -1,0 +1,66 @@
+.content-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-page-title {
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 0; /*margin comes from itterable experience-isntance-div*/
+  text-align: center;
+}
+
+
+.experience-instance-div {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+  margin-top: 50px;
+}
+
+.text-div {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 45px;
+  padding-left: 40px;
+}
+
+.experience-instance-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.experience-instance-description {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+
+/* Mobile responsive - stack text and slider vertically on smaller screens */
+@media (max-width: 650px) {
+  .experience-instance-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-div {
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+

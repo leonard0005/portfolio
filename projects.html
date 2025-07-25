@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leonardo Nieto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/photo-slider.css">
+
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="name-div"> 
+      <p class="name-text">LEONARDO NIETO</p>
+    </div>
+
+    <nav>
+      <!-- Mobile hamburger button (hidden on desktop) -->
+      <button class="hamburger-btn" onclick="toggleMobileMenu()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <!-- Desktop navigation (hidden on mobile) -->
+      <div class="desktop-nav">
+        <button class="about-me-button" onclick="goToPage('index.html')">About Me</button>
+        <button class="resume-button" onclick="goToPage('cv.html')">Resume</button>
+        <button class="experience-button" onclick="goToPage('experience.html')">Experience</button>
+        <button class="projects-button" onclick="goToPage('projects.html')">Projects</button>
+        <button class="academics-button" onclick="goToPage('academics.html')">Academics</button>
+      </div>
+      
+      <!-- Mobile dropdown menu (hidden by default) -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-nav-btn" onclick="goToPage('index.html')">About Me</button>
+        <button class="mobile-nav-btn" onclick="goToPage('cv.html')">Resume</button>
+        <button class="mobile-nav-btn" onclick="goToPage('experience.html')">Experience</button>
+        <button class="mobile-nav-btn" onclick="goToPage('projects.html')">Projects</button>
+        <button class="mobile-nav-btn" onclick="goToPage('academics.html')">Academics</button>
+      </div>
+    </nav>
+
+
+  </div>
+
+  <div class="content-div">
+    <h1 class ="projects-page-title">Projects</h1>
+
+    <div class="project-instance-div">  <!-- Tune -->
+      <div class="text-div">
+        <p class ="project-instance-title">Tune - Ear Training App</p>
+        
+
+        <p class = "project-instance-description">This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+        </p>
+
+      </div>  
+
+      <div class="photo-slider" id="tune-slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="images/projects/Tune-1.jpg" alt="Tune - Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/projects/Tune-2.jpg" alt="Tune - Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/projects/Tune-3.jpg" alt="Tune - Image 3">
+          </div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'tune-slider')">‹</button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1, 'tune-slider')">›</button>
+
+        <!-- Dots indicator -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1, 'tune-slider')"></span>
+          <span class="dot" onclick="currentSlide(2, 'tune-slider')"></span>
+          <span class="dot" onclick="currentSlide(3, 'tune-slider')"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project-instance-div">  <!-- Hangman Game -->
+      <div class="text-div">
+        <p class ="project-instance-title">Hangman - Word Guessing Game</p>
+
+        <p class = "project-instance-description">This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+        </p>
+
+      </div>  
+
+      <div class="photo-slider" id="hangman-slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="images/projects/Hangman-1.jpg" alt="Hangman - Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/projects/Hangman-2.jpg" alt="Hangman - Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/projects/Hangman-3.jpg" alt="Hangman - Image 3">
+          </div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'hangman-slider')">‹</button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1, 'hangman-slider')">›</button>
+
+        <!-- Dots indicator -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1, 'hangman-slider')"></span>
+          <span class="dot" onclick="currentSlide(2, 'hangman-slider')"></span>
+          <span class="dot" onclick="currentSlide(3, 'hangman-slider')"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="footer-div">
+
+    <div class="footer-socials-div">
+      <a href="mailto:leo.nieto.b@gmail.com">Email: leo.nieto.b@gmail.com</a>
+      <a href="https://www.linkedin.com/in/leonardo-nieto-becerril/" target="_blank">
+        <img class="social-icon" src="images/linkedin-icon-white.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/leonard0005" target="_blank">
+        <img class="social-icon" src="images/github-icon-white.png" alt="GitHub">
+      </a>
+    </div>
+
+    <div class="footer-socials-mobile-div">
+      <div class="mail-mobile-div">
+        <a href="mailto:leo.nieto.b@gmail.com">Email: leo.nieto.b@gmail.com</a>
+      </div>
+      <div class="footer-socials-mobile-icons-div">
+        <a href="https://www.linkedin.com/in/leonardo-nieto-becerril/" target="_blank">
+          <img class="social-icon" src="images/linkedin-icon-white.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/leonard0005" target="_blank">
+          <img class="social-icon" src="images/github-icon-white.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+      
+
+    <div class= "footer-nav-div">
+        <a href="index.html">About</a>
+        <a href="cv.html">Resume</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+    </div>
+
+
+    <div class="footer-socials-and-nav-tablet-div">
+      <div class="footer-socials-tablet-div">
+        <div class="mail-tablet-div">
+          <a href="mailto:leo.nieto.b@gmail.com">Email: leo.nieto.b@gmail.com</a>
+        </div>
+
+        <div class="footer-socials-tablet-icons-div">
+          <a href="https://www.linkedin.com/in/leonardo-nieto-becerril/" target="_blank">
+            <img class="social-icon" src="images/linkedin-icon-white.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/leonard0005" target="_blank">
+            <img class="social-icon" src="images/github-icon-white.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+
+      <div class="footer-nav-tablet-div">
+        <a href="index.html">About</a>
+        <a href="cv.html">Resume</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="academics.html">Academics</a>
+      </div>
+
+    </div>
+
+    <div class="footer-text-div">
+      <p class="footer-text">
+        © 2025 Leonardo Nieto. All rights reserved.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
