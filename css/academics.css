@@ -180,4 +180,8 @@
     font-weight: 500;
     color: var(--primary-color);
   }
+
+  .grades-table td:last-child {
+    text-align: left;
+  }
 }

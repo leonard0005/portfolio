@@ -42,10 +42,14 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  aspect-ratio: 8.5 / 11; /* Standard US Letter aspect ratio */
 }
 
 .pdf-embed embed {
   border: none;
+  width: 100%;
+  height: 100%;
 }
 
 .pdf-fallback {
