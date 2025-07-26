@@ -26,7 +26,7 @@
   height: 100%;
   opacity: 0;
   pointer-events: none; /* Prevent clicks on inactive slides */
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .slide.active {
@@ -228,18 +228,6 @@
 }
 
 .slide img:hover {
-  transform: scale(1.02);
-}
-
-.slide video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.slide video:hover {
   transform: scale(1.02);
 }
 

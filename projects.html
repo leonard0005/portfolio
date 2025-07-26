@@ -140,6 +140,65 @@
 
     </div>
 
+    <div class="project-instance-div">  <!-- Claw -->
+      <div class="text-div">
+        <p class ="project-instance-title">Claw ???</p>
+        
+
+        <p class = "project-instance-description">This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
+        </p>
+
+      </div>  
+
+      <div class="photo-slider" id="claw-slider">
+        <div class="slider-container">
+          <div class="slide">
+            <img src="images/projects/claw-1.gif" alt="Claw - Demo GIF">
+          </div>
+          <div class="slide">
+            <video controls muted loop>
+              <source src="videos/projects/claw-2.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="slide active">
+            <img src="images/projects/claw-3.jpg" alt="Claw - Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/projects/claw-4.jpg" alt="Claw - Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/projects/claw-5.jpg" alt="Claw - Image 3">
+          </div>
+          <div class="slide">
+            <img src="images/projects/claw-6.jpg" alt="Claw - Image 3">
+          </div>         
+
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'claw-slider')">‹</button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1, 'claw-slider')">›</button>
+
+        <!-- Dots indicator -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1, 'claw-slider')"></span>
+          <span class="dot" onclick="currentSlide(2, 'claw-slider')"></span>
+          <span class="dot" onclick="currentSlide(3, 'claw-slider')"></span>
+          <span class="dot" onclick="currentSlide(4, 'claw-slider')"></span>
+          <span class="dot" onclick="currentSlide(5, 'claw-slider')"></span>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!-- Add more project instances as needed  Excel, miscelanious python (mathquest and sorting algs?), 3d modeling chair? -->
+
 
   </div>
 
@@ -214,7 +273,15 @@
   </div>
 
 
-
+  <!-- Fullscreen Photo Modal -->
+  <div id="photoModal" class="photo-modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <button class="modal-nav-btn modal-prev" onclick="modalChangeSlide(-1)">‹</button>
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <button class="modal-nav-btn modal-next" onclick="modalChangeSlide(1)">›</button>
+    </div>
+  </div>
 
 
 </body>
