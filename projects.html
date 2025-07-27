@@ -156,27 +156,27 @@
 
       <div class="photo-slider" id="claw-slider">
         <div class="slider-container">
-          <div class="slide">
+          <div class="slide active">
             <img src="images/projects/claw-1.gif" alt="Claw - Demo GIF">
           </div>
           <div class="slide">
-            <video controls muted loop>
-              <source src="videos/projects/claw-2.mov" type="video/mp4">
-              Your browser does not support the video tag.
+            <video controls muted loop preload="metadata" poster="images/projects/claw-2-poster.jpg">
+              <source src="images/projects/claw-2.mp4" type="video/mp4">
+              <p>Your browser does not support the video tag. <a href="images/projects/claw-2.mp4">Download the video</a></p>
             </video>
           </div>
-          <div class="slide active">
-            <img src="images/projects/claw-3.jpg" alt="Claw - Image 1">
+          <div class="slide">
+            <img src="images/projects/claw-3.jpg" alt="Claw - Image 3">
           </div>
           <div class="slide">
-            <img src="images/projects/claw-4.jpg" alt="Claw - Image 2">
+            <img src="images/projects/claw-4.jpg" alt="Claw - Image 4">
           </div>
           <div class="slide">
-            <img src="images/projects/claw-5.jpg" alt="Claw - Image 3">
+            <img src="images/projects/claw-5.jpg" alt="Claw - Image 5">
           </div>
           <div class="slide">
-            <img src="images/projects/claw-6.jpg" alt="Claw - Image 3">
-          </div>         
+            <img src="images/projects/claw-6.jpg" alt="Claw - Image 6">
+          </div>
 
         </div>
         
@@ -191,10 +191,49 @@
           <span class="dot" onclick="currentSlide(3, 'claw-slider')"></span>
           <span class="dot" onclick="currentSlide(4, 'claw-slider')"></span>
           <span class="dot" onclick="currentSlide(5, 'claw-slider')"></span>
+          <span class="dot" onclick="currentSlide(6, 'claw-slider')"></span>
         </div>
       </div>
 
     </div>
+
+    <div class="project-instance-div">  <!-- Rain Water Harvesting System Excel Simulation -->
+      <div class="text-div">
+        <p class ="project-instance-title">Rain Water Harvesting System Excel Simulation</p>
+
+        <p class = "project-instance-description">Passed all requirements and accomplished 91.93% stakeholder satisfaction. Won studio out of 10 teams. Placed 22nd out of 200 teams.
+        </p>
+
+      </div>  
+
+      <div class="photo-slider" id="rwh-slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="images/projects/rwh-1.jpg" alt="Rain Water Harvesting System - Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/projects/rwh-2.jpg" alt="Rain Water Harvesting System - Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/projects/rwh-3.jpg" alt="Rain Water Harvesting System - Image 3">
+          </div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'rwh-slider')">‹</button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1, 'rwh-slider')">›</button>
+
+        <!-- Dots indicator -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1, 'rwh-slider')"></span>
+          <span class="dot" onclick="currentSlide(2, 'rwh-slider')"></span>
+          <span class="dot" onclick="currentSlide(3, 'rwh-slider')"></span>
+        </div>
+      </div>
+
+    </div>
+
+
     
 
     <!-- Add more project instances as needed  Excel, miscelanious python (mathquest and sorting algs?), 3d modeling chair? -->
@@ -278,7 +317,11 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal()">&times;</button>
       <button class="modal-nav-btn modal-prev" onclick="modalChangeSlide(-1)">‹</button>
-      <img id="modalImage" class="modal-image" src="" alt="">
+      <img id="modalImage" class="modal-image" src="" alt="" style="display: none;">
+      <video id="modalVideo" class="modal-image" controls muted loop style="display: none;">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <button class="modal-nav-btn modal-next" onclick="modalChangeSlide(1)">›</button>
     </div>
   </div>

@@ -162,7 +162,10 @@
             <img src="images/experience/Jazz-1.jpg" alt="Jazz Club - Image 1">
           </div>
           <div class="slide">
-            <img src="images/experience/Jazz-2.jpg" alt="Jazz Club - Image 2">
+            <video controls muted loop preload="metadata" poster="images/experience/jazz-2-poster.jpg">
+              <source src="images/experience/jazz-2.mp4" type="video/mp4">
+              <p>Your browser does not support the video tag. <a href="images/experience/jazz-2.mp4">Download the video</a></p>
+            </video>
           </div>
           <div class="slide">
             <img src="images/experience/Jazz-3.jpg" alt="Jazz Club - Image 3">
@@ -259,7 +262,11 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal()">&times;</button>
       <button class="modal-nav-btn modal-prev" onclick="modalChangeSlide(-1)">‹</button>
-      <img id="modalImage" class="modal-image" src="" alt="">
+      <img id="modalImage" class="modal-image" src="" alt="" style="display: none;">
+      <video id="modalVideo" class="modal-image" controls muted loop style="display: none;">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <button class="modal-nav-btn modal-next" onclick="modalChangeSlide(1)">›</button>
     </div>
   </div>
