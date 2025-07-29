@@ -13,16 +13,52 @@
   align-items: center;
   margin-right: 40px;
   padding-left: 40px;
-}
 
-.about-me-title {
   font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
   color: var(--text-color);
-  margin-bottom: 20px;
+  line-height: 1.7;
   text-align: center;
 }
+
+
+.title-div {
+  align-self: center;
+  margin: 0px;
+  width: fit-content;
+}
+
+h1 {
+  margin-bottom: 15px; /*margin comes from itterable experience-instance-div*/
+}
+
+
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 26px;
+  color: var(--tertiary-color);
+  font-weight: 500;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.skills-list li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 .about-me-paragraph {
@@ -40,8 +76,23 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 0;
   width: 100%;
+  background-color: var(--fifth-color);
+  border-radius: 3px;
+  border: 1px solid var(--secondary-color);
+  padding: 10px 0;
+}
+
+.socials-div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.socials-div a:hover {
+  transform: translateY(-4px);
 }
 
 

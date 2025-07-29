@@ -1,8 +1,9 @@
 :root {
   --primary-color: rgb(58, 95, 129);
   --secondary-color: rgb(146, 170, 178);
-  --terciary-color: rgb(237, 233, 226);
+  --tertiary-color: #212529;
   --fourtuary-color: rgb(26, 42, 47);
+  --fifth-color: rgb(233, 247, 255);
   --text-color: black;
   --background-color: rgb(248, 249, 250);
   --font-family: 'Roboto', sans-serif;
