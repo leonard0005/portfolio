@@ -3,13 +3,10 @@
   flex-direction: column;
 }
 
-.experience-page-title {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-  color: var(--text-color);
-  margin: 0; /*margin comes from itterable experience-isntance-div*/
-  text-align: center;
+.title-div {
+  align-self: center;
+  margin-left: 40px;
+  width: fit-content;
 }
 
 
@@ -29,6 +26,49 @@
   margin-right: 45px;
   padding-left: 40px;
 }
+
+.experience-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  font-family: "Segoe UI", sans-serif;
+  color: #212529;
+}
+
+
+.experience-card h2 {
+  font-size: 1.2rem;
+  color: var(--tertiary-color);
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+
+.experience-card h3 {
+  font-size: 1.1rem;
+  color: #495057;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.experience-card p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.experience-card ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+  margin-top: 0px
+}
+
+.experience-card ul li {
+  margin-bottom: 6px;
+}
+
+
 
 .experience-instance-title {
   font-size: 22px;

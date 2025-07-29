@@ -3,28 +3,10 @@
   flex-direction: column;
 }
 
-.projects-page-title {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: 400;
-  color: var(--text-color);
-  margin: 0; /*margin comes from itterable experience-isntance-div*/
-  text-align: center;
-}
-
-/* Excel link styling */
-.excel-link {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.excel-link:hover {
-  color: rgb(0, 149, 255) ;
-  border-bottom: 1px solid rgb(0, 149, 255);
-  transform: translateY(-1px);
+.title-div {
+  align-self: center;
+  margin-left: 40px;
+  width: fit-content;
 }
 
 /* Skills used styling */
@@ -95,48 +77,63 @@
 
 
 
-  .project-card {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 32px;
-    font-family: "Segoe UI", sans-serif;
-    color: #212529;
-  }
+.project-card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  font-family: "Segoe UI", sans-serif;
+  color: #212529;
+}
 
 
-  .project-card h2 {
-    font-size: 1.2rem;
-    color: var(--tertiary-color);
-    margin-top: 20px;
-    margin-bottom: 8px;
-  }
+.project-card h2 {
+  font-size: 1.2rem;
+  color: var(--tertiary-color);
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
 
 
-  .project-card h3 {
-    font-size: 1.1rem;
-    color: #495057;
-    margin-top: 10px;
-    margin-bottom: 8px;
-  }
+.project-card h3 {
+  font-size: 1.1rem;
+  color: #495057;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
 
-  .project-card p {
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
+.project-card p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
 
-  .project-card ul {
-    margin-left: 20px;
-    margin-bottom: 12px;
-    margin-top: 0px
-  }
+.project-card ul {
+  margin-left: 20px;
+  margin-bottom: 12px;
+  margin-top: 0px
+}
 
-  .project-card ul li {
-    margin-bottom: 6px;
-  }
+.project-card ul li {
+  margin-bottom: 6px;
+}
+
+  
+/* Excel link styling */
+.project-card a {
+  color: rgb(1, 118, 202);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.project-card a:hover {
+  color: rgb(0, 149, 255);
+  border-bottom: 1px solid rgb(0, 149, 255);
+  transform: translateY(-1px);
+}
 
   .highlight {
-    font-weight: bold;
+    font-weight: 500;
     color: #198754;
   }

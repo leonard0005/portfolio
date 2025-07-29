@@ -4,13 +4,9 @@
   padding: 0 20px;
 }
 
-.academics-title {
-  font-family: var(--font-family);
-  font-size: 32px;
-  font-weight: 400;
-  color: var(--text-color);
-  text-align: center;
-  margin-bottom: 40px;
+.title-div {
+  align-self: flex-start;
+  width: fit-content;
 }
 
 .university-section {
@@ -109,7 +105,7 @@
     padding: 0 15px;
   }
   
-  .academics-title {
+  h1 {
     font-size: 26px;
   }
   
