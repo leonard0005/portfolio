@@ -35,7 +35,7 @@ function setContentPosition() {
   
   if (header && contentDiv) {
     const headerHeight = header.offsetHeight;
-    contentDiv.style.paddingTop = `${headerHeight + 40}px`;
+    contentDiv.style.paddingTop = `${headerHeight + 25}px`;
   }
 }
 
