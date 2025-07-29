@@ -92,6 +92,14 @@ function showSlide(slideIndex, sliderId) {
   
   const currentIndex = sliderStates[sliderId].currentIndex;
   
+  // Pause all videos in this slider before switching slides
+  const allVideos = sliderContainer.querySelectorAll('video');
+  allVideos.forEach(video => {
+    if (!video.paused) {
+      video.pause();
+    }
+  });
+  
   // Hide all slides and dots for this slider
   slides.forEach(slide => slide.classList.remove('active'));
   dots.forEach(dot => dot.classList.remove('active'));
@@ -224,6 +232,12 @@ function closeModal() {
 function modalChangeSlide(direction) {
   if (modalImages.length === 0) return;
   
+  // Pause current video if playing before switching
+  const modalVideo = document.getElementById('modalVideo');
+  if (modalVideo.style.display === 'block' && !modalVideo.paused) {
+    modalVideo.pause();
+  }
+  
   currentModalIndex += direction;
   
   // Handle wraparound
@@ -236,7 +250,6 @@ function modalChangeSlide(direction) {
   
   // Update modal media
   const modalImage = document.getElementById('modalImage');
-  const modalVideo = document.getElementById('modalVideo');
   const currentMedia = modalImages[currentModalIndex];
   
   if (currentMedia.type === 'video') {

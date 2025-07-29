@@ -14,7 +14,7 @@
 
 .slider-container {
   position: relative;
-  height: 400px;
+  height: 250px;
   overflow: hidden;
 }
 
@@ -174,7 +174,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
   color: white;
   border: none;
   font-size: 36px;
@@ -188,7 +188,7 @@
 }
 
 .modal-nav-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   transform: translateY(-50%) scale(1.1);
 }
 

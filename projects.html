@@ -59,7 +59,9 @@
   <div class="content-div">
     <h1 class ="projects-page-title">Projects</h1>
 
-    <div class="project-instance-div">  <!-- Tune -->
+
+    <!-- Tune
+    <div class="project-instance-div">  <!-- Tune 
       <div class="text-div">
         <p class ="project-instance-title">Tune - Ear Training App</p>
         
@@ -86,11 +88,9 @@
           </div>
         </div>
         
-        <!-- Navigation arrows -->
         <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'tune-slider')">‹</button>
         <button class="slider-btn next-btn" onclick="changeSlide(1, 'tune-slider')">›</button>
 
-        <!-- Dots indicator -->
         <div class="slider-dots">
           <span class="dot active" onclick="currentSlide(1, 'tune-slider')"></span>
           <span class="dot" onclick="currentSlide(2, 'tune-slider')"></span>
@@ -99,18 +99,30 @@
       </div>
 
     </div>
+  -->
 
     <div class="project-instance-div">  <!-- Hangman Game -->
       <div class="text-div">
-        <p class ="project-instance-title">Hangman - Word Guessing Game</p>
+        <div class="project-card">
+          <h2>Hangman Game – Python & Pygame</h2>
+          <p class="skills-used"><strong>Skills Used:</strong> Python • Object-Oriented Programming • Pygame • UI Design • Audio Integration</p>
 
-        <p class = "project-instance-description">This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-        </p>
+          <p>
+            For my high school programming class, I built a feature-rich <a href="https://github.com/leonard0005/HangmanPygame.git" target="_blank">Hangman game</a> using Python and Pygame, themed around the Old West. The game integrates custom graphics, sound effects, animations, and a dynamic scoring system.
+          </p>
 
+          <h3>My Role:</h3>
+          <p>
+            I developed the entire project independently, focusing on clean object-oriented structure and a polished user experience:
+          </p>
+
+          <h3>Outcome & Highlights</h3>
+          <ul>
+            <li class="highlight">Showcased strong OOP practices and UI programming in Python</li>
+            <li class="highlight">Integrated graphics, audio, and animation for a full game experience</li>
+            <li>Published the full game and code on <a href="https://github.com/leonard0005/HangmanPygame.git" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
       </div>  
 
       <div class="photo-slider" id="hangman-slider">
@@ -124,6 +136,12 @@
           <div class="slide">
             <img src="images/projects/Hangman-3.jpg" alt="Hangman - Image 3">
           </div>
+          <div class="slide">
+            <video controls muted loop preload="metadata" poster="images/projects/Hangman-4-poster.jpg">
+              <source src="images/projects/Hangman-4.mp4" type="video/mp4">
+              <p>Your browser does not support the video tag. <a href="images/projects/Hangman-4.mp4">Download the video</a></p>
+            </video>
+          </div>
         </div>
         
         <!-- Navigation arrows -->
@@ -135,6 +153,7 @@
           <span class="dot active" onclick="currentSlide(1, 'hangman-slider')"></span>
           <span class="dot" onclick="currentSlide(2, 'hangman-slider')"></span>
           <span class="dot" onclick="currentSlide(3, 'hangman-slider')"></span>
+          <span class="dot" onclick="currentSlide(4, 'hangman-slider')"></span>
         </div>
       </div>
 
@@ -142,15 +161,37 @@
 
     <div class="project-instance-div">  <!-- Claw -->
       <div class="text-div">
-        <p class ="project-instance-title">Claw ???</p>
-        
+        <div class="project-card">
+          <h2>Autonomous Claw Retrieval System – Claw Design & Programming</h2>
+          <p class="skills-used"><strong>Skills Used:</strong> C++ Programming • Arduino & Electronics • SolidWorks CAD • Engineering Drawings • Team Collaboration</p>
+          
+          <p>
+            As part of a design project for APSC 100/101 at UBC, our team developed an autonomous claw mechanism to compete in a class-wide claw retrieval challenge.
+          </p>
 
-        <p class = "project-instance-description">This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-          This is a brief introduction about me and my work.This is a brief introduction about me and my work.
-        </p>
+          <h3>Project Overview</h3>
+          <p>
+            The goal was to design, build, and program a functional robotic claw that could autonomously retrieve both varied and standardized objects within timed rounds of a competitive event. Our solution integrated C++ code on an Arduino microcontroller, a sonar sensor for object detection, and a servo motor for actuation. Our team also prepared formal engineering drawings.
+          </p>
+
+          <h3>My Role:</h3>
+          <p>
+            I contributed across software, design, and fabrication:
+          </p>
+          <ul>
+            <li>Programmed the claw control logic using C++ in Arduino IDE</li>
+            <li>Created the 3D CAD model and technical drawings using SolidWorks</li>
+            <li>Helped assemble the sheet metal claw, integrating electronics and sensors</li>
+          </ul>
+
+          <h3>Outcome & Team Achievements</h3>
+          <ul>
+            <li class="highlight">Delivered a fully functional claw that met all design and performance requirements</li>
+            <li class="highlight">Successfully integrated sonar sensing and servo actuation</li>
+            <li>Gained experience in interdisciplinary teamwork and physical prototyping</li>
+          </ul>
+        </div>
+
 
       </div>  
 
@@ -199,13 +240,40 @@
 
     <div class="project-instance-div">  <!-- Rain Water Harvesting System Excel Simulation -->
       <div class="text-div">
-        <p class ="project-instance-title">Rain Water Harvesting System Excel Simulation</p>
+        <div class="project-card">
+          <h2>Rainwater Harvesting System - Excel Simulation Specialist</h2>
+          <p class="skills-used"><strong>Skills Used:</strong> Excel Modeling • Team Collaboration • Stakeholder Assessment </p>
+          <p>
+            For my intro to Engineering course in first-year engineering at UBC, I collaborated with a team of peers to design a decentralized rainwater harvesting (RWH) system tailored for a two-person household in a remote northern BC community—mirroring the real challenges faced by many small island and rural settlements in the region.
+          </p>
 
-        <p class = "project-instance-description">Passed all requirements and accomplished 91.93% stakeholder satisfaction. Won studio out of 10 teams. Placed 22nd out of 200 teams.
-        </p>
+          <h3>Project Overview</h3>
+          <p>Our mission was to select 30 interconnected parameters to create a self-sufficient system that collects rainwater, purifies it for safe use, stores it for daily needs, runs independently using off-grid power, and is designed to meet key stakeholder priorities like reliability, cost, sustainability, and ease of maintenance.
+            We analyzed interviews with representatives from a Water Improvement District, shaping evaluation metrics like user satisfaction, emissions, cost, and ease of service.
+          </p>
 
-      </div>  
+          <h3>My Role:</h3>
+          <p>
+            I developed a <a href="documents/A5 Final Team Model.xlsx" target="_blank" class="excel-link">multi-sheet Excel model</a> (10+ interconnected sheets) that simulated:
+          </p>
+          <ul>
+            <li>Rainfall-based water availability</li>
+            <li>Tank dynamics (filling, overflow, supply)</li>
+            <li>Household demand coverage</li>
+            <li>Component performance (filters, pumps, power, disinfection)</li>
+            <li>Stakeholder satisfaction scoring</li>
+          </ul>
 
+          <h3> Outcome & Team Achievements</h3>
+          <ul>
+            <li class="highlight">Placed 1st out of 10 teams in our studio</li>
+            <li class="highlight">Passed all project requirements</li>
+            <li class="highlight">Achieved 91.93% stakeholder satisfaction</li>
+            <li>Delivered a narrated e-poster summarizing our results</li>
+          </ul>
+
+        </div> 
+      </div>
       <div class="photo-slider" id="rwh-slider">
         <div class="slider-container">
           <div class="slide active">
@@ -217,7 +285,11 @@
           <div class="slide">
             <img src="images/projects/rwh-3.jpg" alt="Rain Water Harvesting System - Image 3">
           </div>
+          <div class="slide">
+            <img src="images/projects/rwh-4.jpg" alt="Rain Water Harvesting System - Image 4">
+          </div>
         </div>
+
         
         <!-- Navigation arrows -->
         <button class="slider-btn prev-btn" onclick="changeSlide(-1, 'rwh-slider')">‹</button>
@@ -228,6 +300,7 @@
           <span class="dot active" onclick="currentSlide(1, 'rwh-slider')"></span>
           <span class="dot" onclick="currentSlide(2, 'rwh-slider')"></span>
           <span class="dot" onclick="currentSlide(3, 'rwh-slider')"></span>
+          <span class="dot" onclick="currentSlide(4, 'rwh-slider')"></span>
         </div>
       </div>
 

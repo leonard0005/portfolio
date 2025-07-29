@@ -92,6 +92,14 @@ function showSlide(slideIndex, sliderId) {
   
   const currentIndex = sliderStates[sliderId].currentIndex;
   
+  // Pause all videos in this slider before switching slides
+  const allVideos = sliderContainer.querySelectorAll('video');
+  allVideos.forEach(video => {
+    if (!video.paused) {
+      video.pause();
+    }
+  });
+  
   // Hide all slides and dots for this slider
   slides.forEach(slide => slide.classList.remove('active'));
   dots.forEach(dot => dot.classList.remove('active'));
@@ -159,28 +167,44 @@ let currentModalSlider = null;
 let currentModalIndex = 0;
 let modalImages = [];
 
-function openModal(imageSrc, sliderId) {
+function openModal(mediaSrc, sliderId) {
   const modal = document.getElementById('photoModal');
   const modalImage = document.getElementById('modalImage');
+  const modalVideo = document.getElementById('modalVideo');
   
   // Store current slider info
   currentModalSlider = sliderId;
   
-  // Get all images from the current slider
+  // Get all media from the current slider (images and videos)
   const sliderContainer = document.getElementById(sliderId);
-  const slides = sliderContainer.querySelectorAll('.slide img');
-  modalImages = Array.from(slides).map(img => ({
-    src: img.src,
-    alt: img.alt
-  }));
+  const slides = sliderContainer.querySelectorAll('.slide');
+  modalImages = Array.from(slides).map(slide => {
+    const img = slide.querySelector('img');
+    const video = slide.querySelector('video');
+    if (img) {
+      return { src: img.src, alt: img.alt, type: 'image' };
+    } else if (video) {
+      return { src: video.querySelector('source').src, alt: 'Video', type: 'video' };
+    }
+  }).filter(item => item); // Remove any undefined items
   
-  // Find current image index
-  currentModalIndex = modalImages.findIndex(img => img.src === imageSrc);
+  // Find current media index
+  currentModalIndex = modalImages.findIndex(item => item.src === mediaSrc);
   if (currentModalIndex === -1) currentModalIndex = 0;
   
-  // Set modal image
-  modalImage.src = modalImages[currentModalIndex].src;
-  modalImage.alt = modalImages[currentModalIndex].alt;
+  // Display the correct media type
+  const currentMedia = modalImages[currentModalIndex];
+  if (currentMedia.type === 'video') {
+    modalImage.style.display = 'none';
+    modalVideo.style.display = 'block';
+    modalVideo.querySelector('source').src = currentMedia.src;
+    modalVideo.load(); // Reload the video with new source
+  } else {
+    modalVideo.style.display = 'none';
+    modalImage.style.display = 'block';
+    modalImage.src = currentMedia.src;
+    modalImage.alt = currentMedia.alt;
+  }
   
   // Show modal
   modal.style.display = 'block';
@@ -189,8 +213,17 @@ function openModal(imageSrc, sliderId) {
 
 function closeModal() {
   const modal = document.getElementById('photoModal');
+  const modalImage = document.getElementById('modalImage');
+  const modalVideo = document.getElementById('modalVideo');
+  
   modal.style.display = 'none';
   document.body.style.overflow = 'auto'; // Restore scrolling
+  
+  // Reset both media elements
+  modalImage.style.display = 'none';
+  modalVideo.style.display = 'none';
+  modalVideo.pause(); // Pause video when modal closes
+  
   currentModalSlider = null;
   currentModalIndex = 0;
   modalImages = [];
@@ -209,10 +242,22 @@ function modalChangeSlide(direction) {
     currentModalIndex = modalImages.length - 1;
   }
   
-  // Update modal image
+  // Update modal media
   const modalImage = document.getElementById('modalImage');
-  modalImage.src = modalImages[currentModalIndex].src;
-  modalImage.alt = modalImages[currentModalIndex].alt;
+  const modalVideo = document.getElementById('modalVideo');
+  const currentMedia = modalImages[currentModalIndex];
+  
+  if (currentMedia.type === 'video') {
+    modalImage.style.display = 'none';
+    modalVideo.style.display = 'block';
+    modalVideo.querySelector('source').src = currentMedia.src;
+    modalVideo.load(); // Reload the video with new source
+  } else {
+    modalVideo.style.display = 'none';
+    modalImage.style.display = 'block';
+    modalImage.src = currentMedia.src;
+    modalImage.alt = currentMedia.alt;
+  }
   
   // Update the corresponding slider to match
   if (currentModalSlider) {

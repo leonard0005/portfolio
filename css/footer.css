@@ -45,7 +45,7 @@
 
 
 
-a {
+.footer-div a {
   color: var(--background-color);
   text-decoration: none;
   font-family: var(--font-family);
