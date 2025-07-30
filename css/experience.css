@@ -5,9 +5,14 @@
 
 .title-div {
   align-self: center;
-  margin-left: 40px;
+  margin-left: 0px;
   width: fit-content;
 }
+
+h1 {
+  margin-bottom: 0px; 
+}
+
 
 
 .experience-instance-div {
@@ -41,7 +46,7 @@
 .experience-card h2 {
   font-size: 1.2rem;
   color: var(--tertiary-color);
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 8px;
 }
 
@@ -101,6 +106,46 @@
     padding-right: 20px;
     width: 100%;
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 450px) {
+  .experience-card {
+    padding: 18px;
+    margin-bottom: 24px;
+  }
+  
+  .experience-card h2 {
+    font-size: 1.05rem;
+    margin-top: 3px;
+    margin-bottom: 6px;
+  }
+  
+  .experience-card h3 {
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 6px;
+  }
+  
+  .experience-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .experience-card ul {
+    margin-left: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .experience-card ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .text-div {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
