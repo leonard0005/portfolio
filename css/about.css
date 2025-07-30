@@ -111,3 +111,67 @@ h2 {
   border-radius: 10px;
 }
 
+/* Mobile responsive - smaller headings for small screens */
+@media (max-width: 650px) {
+  .content-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-div {
+    padding: 0px 25px 30px 25px;
+    margin-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .personal-image-div {
+    padding-right: 0;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    padding-bottom: 0px;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  
+  .skills-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-div {
+    padding: 0px 20px 20px 20px;
+  }
+  
+  .personal-image-div {
+    max-width: 300px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 14px;
+  }
+  
+  .skills-list li {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
