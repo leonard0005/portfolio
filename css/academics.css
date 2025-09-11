@@ -13,7 +13,7 @@
   margin-bottom: 50px;
 }
 
-.university-name {
+.degree-info {
   font-family: var(--font-family);
   font-size: 24px;
   font-weight: 500;
@@ -21,7 +21,7 @@
   margin-bottom: 8px;
 }
 
-.degree-info {
+.university-name {
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 400;
