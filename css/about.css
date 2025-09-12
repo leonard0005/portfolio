@@ -63,7 +63,7 @@ h2 {
 
 .about-me-paragraph {
   font-family: var(--font-family);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: var(--text-color);
   margin: 0;
@@ -73,7 +73,7 @@ h2 {
 
 
 .skills-list li {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .socials-div {
